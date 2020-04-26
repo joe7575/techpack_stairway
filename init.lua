@@ -3,7 +3,7 @@
 	TechPack Stairway
 	=================
 
-	Copyright (C) 2019 Joachim Stolberg
+	Copyright (C) 2019-2020 Joachim Stolberg
 
 	LGPLv2.1+
 	See LICENSE.txt for more information
@@ -626,17 +626,3 @@ minetest.register_craft({
 	output = "techpack_stairway:ladder2",
 	recipe = {{"techpack_stairway:ladder1"}},
 })
-
-minetest.register_alias("tubelib_stairway:grating", "techpack_stairway:grating")
-minetest.register_alias("tubelib_stairway:lattice", "techpack_stairway:lattice")
-minetest.register_alias("tubelib_stairway:handrail1", "techpack_stairway:handrail1")
-minetest.register_alias("tubelib_stairway:handrail2", "techpack_stairway:handrail3")
-minetest.register_alias("tubelib_stairway:handrail3", "techpack_stairway:handrail4")
-minetest.register_alias("tubelib_stairway:handrail4", "techpack_stairway:handrail5")
-minetest.register_alias("tubelib_stairway:stairway", "techpack_stairway:stairway")
-minetest.register_alias("tubelib_stairway:ladder1", "techpack_stairway:ladder1")
-minetest.register_alias("tubelib_stairway:ladder2", "techpack_stairway:ladder2")
-minetest.register_alias("tubelib_stairway:bridge1", "techpack_stairway:bridge1")
-minetest.register_alias("tubelib_stairway:bridge2", "techpack_stairway:bridge2")
-minetest.register_alias("tubelib_stairway:bridge3", "techpack_stairway:bridge3")
-minetest.register_alias("tubelib_stairway:bridge4", "techpack_stairway:bridge4")
