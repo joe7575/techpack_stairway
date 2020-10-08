@@ -503,6 +503,53 @@ minetest.register_node("techpack_stairway:lattice", {
 	sounds = default.node_sound_metal_defaults(),
 })
 
+minetest.register_node("techpack_stairway:lattice_slop", {
+	description = "TechPack Lattice Slope",
+	tiles = {
+		'techpack_stairway_lattice.png',
+	},
+	drawtype = "mesh",
+	mesh="techpack_stairway_slope.obj",
+
+	selection_box = {
+		type = "fixed",
+		fixed = {
+			{-8/16,  4/16,  4/16,  8/16,  8/16, 8/16},
+		    {-8/16,  0/16,  0/16,  8/16,  4/16, 8/16},
+		    {-8/16, -4/16, -4/16,  8/16,  0/16, 8/16},
+		    {-8/16, -8/16, -8/16,  8/16, -4/16, 8/16},
+		},
+	},
+	
+	collision_box = {
+		type = "fixed",
+		fixed = {
+			{-8/16,  4/16,  4/16,  8/16,  8/16, 8/16},
+		    {-8/16,  0/16,  0/16,  8/16,  4/16, 8/16},
+		    {-8/16, -4/16, -4/16,  8/16,  0/16, 8/16},
+		    {-8/16, -8/16, -8/16,  8/16, -4/16, 8/16},
+		},
+	},
+	
+	after_place_node = function(pos, placer, itemstack, pointed_thing)
+		local node = minetest.get_node(pos)
+		local dir = minetest.facedir_to_dir(node.param2)
+		if pointed_thing.under.y >= pointed_thing.above.y then
+			local newparam2 = ({[0] = 8, [1] = 17, [2] = 22, [3] = 15})[node.param2]
+			if newparam2 then
+				node.param2 = newparam2
+				minetest.swap_node(pos, node)
+			end
+		end
+	end,
+		
+	paramtype2 = "facedir",
+	paramtype = "light",
+	sunlight_propagates = true,
+	is_ground_content = false,
+	groups = {cracky = 2},
+	sounds = default.node_sound_metal_defaults(),
+})
 
 minetest.register_craft({
 	output = "techpack_stairway:grating 4",
@@ -558,6 +605,10 @@ minetest.register_craft({
 	},
 })
 
+minetest.register_craft({
+	output = "techpack_stairway:lattice_slop 2",
+	recipe = {{"techpack_stairway:lattice"}},
+})
 
 minetest.register_craft({
 	output = "techpack_stairway:handrail2",

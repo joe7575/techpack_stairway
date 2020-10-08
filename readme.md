@@ -17,3 +17,4 @@ none
 ### History
 - 2018-12-29  v0.01  * first draft
 - 2020-04-26  v1.00  * extracted from TechPack and released
+- 2020-10-08  v1.01  * Lattice Slope node added 
