@@ -11,8 +11,11 @@
 	init.lua
 
 ]]--
+
+S = minetest.get_translator("techpack_stairway")
+
 minetest.register_node("techpack_stairway:grating", {
-	description = "TechPack Grating",
+	description = S("TechPack Grating"),
 	tiles = {
 		'techpack_stairway_bottom.png',
 		'techpack_stairway_bottom.png',
@@ -43,7 +46,7 @@ minetest.register_node("techpack_stairway:grating", {
 })
 
 minetest.register_node("techpack_stairway:handrail1", {
-	description = "TechPack Handrail 1",
+	description = S("TechPack Handrail 1"),
 	tiles = {
 		'techpack_stairway_bottom.png',
 		'techpack_stairway_bottom.png',
@@ -74,7 +77,7 @@ minetest.register_node("techpack_stairway:handrail1", {
 })
 
 minetest.register_node("techpack_stairway:handrail2", {
-	description = "TechPack Handrail 2",
+	description = S("TechPack Handrail 2"),
 	tiles = {
 		'techpack_stairway_bottom.png',
 		'techpack_stairway_bottom.png',
@@ -107,7 +110,7 @@ minetest.register_node("techpack_stairway:handrail2", {
 })
 
 minetest.register_node("techpack_stairway:handrail3", {
-	description = "TechPack Handrail 3",
+	description = S("TechPack Handrail 3"),
 	tiles = {
 		'techpack_stairway_bottom.png',
 		'techpack_stairway_bottom.png',
@@ -140,7 +143,7 @@ minetest.register_node("techpack_stairway:handrail3", {
 })
 
 minetest.register_node("techpack_stairway:handrail4", {
-	description = "TechPack Handrail 4",
+	description = S("TechPack Handrail 4"),
 	tiles = {
 		'techpack_stairway_bottom.png',
 		'techpack_stairway_bottom.png',
@@ -175,7 +178,7 @@ minetest.register_node("techpack_stairway:handrail4", {
 })
 
 minetest.register_node("techpack_stairway:bridge1", {
-	description = "TechPack Bridge 1",
+	description = S("TechPack Bridge 1"),
 	tiles = {
 		'techpack_stairway_bottom.png',
 		'techpack_stairway_bottom.png',
@@ -207,7 +210,7 @@ minetest.register_node("techpack_stairway:bridge1", {
 })
 
 minetest.register_node("techpack_stairway:bridge2", {
-	description = "TechPack Bridge 2",
+	description = S("TechPack Bridge 2"),
 	tiles = {
 		'techpack_stairway_bottom.png',
 		'techpack_stairway_bottom.png',
@@ -240,7 +243,7 @@ minetest.register_node("techpack_stairway:bridge2", {
 })
 
 minetest.register_node("techpack_stairway:bridge3", {
-	description = "TechPack Bridge 3",
+	description = S("TechPack Bridge 3"),
 	tiles = {
 		'techpack_stairway_bottom.png',
 		'techpack_stairway_bottom.png',
@@ -273,7 +276,7 @@ minetest.register_node("techpack_stairway:bridge3", {
 })
 
 minetest.register_node("techpack_stairway:bridge4", {
-	description = "TechPack Bridge 4",
+	description = S("TechPack Bridge 4"),
 	tiles = {
 		'techpack_stairway_bottom.png',
 		'techpack_stairway_bottom.png',
@@ -307,7 +310,7 @@ minetest.register_node("techpack_stairway:bridge4", {
 })
 
 minetest.register_node("techpack_stairway:stairway", {
-	description = "TechPack Stairway",
+	description = S("TechPack Stairway"),
 	tiles = {
 		'techpack_stairway_steps.png',
 		'techpack_stairway_steps.png',
@@ -345,7 +348,7 @@ minetest.register_node("techpack_stairway:stairway", {
 })
 
 minetest.register_node("techpack_stairway:ladder1", {
-	description = "TechPack Ladder 1",
+	description = S("TechPack Ladder 1"),
 	tiles = {
 		'techpack_stairway_steps.png',
 		'techpack_stairway_steps.png',
@@ -376,7 +379,7 @@ minetest.register_node("techpack_stairway:ladder1", {
 })
 
 minetest.register_node("techpack_stairway:ladder2", {
-	description = "TechPack Ladder 2",
+	description = S("TechPack Ladder 2"),
 	tiles = {
 		'techpack_stairway_steps.png',
 		'techpack_stairway_steps.png',
@@ -408,7 +411,7 @@ minetest.register_node("techpack_stairway:ladder2", {
 })
 
 minetest.register_node("techpack_stairway:ladder3", {
-    description = "TechPack Ladder 3",
+    description = S("TechPack Ladder 3"),
     tiles = {
         'techpack_stairway_steps.png',
         'techpack_stairway_steps.png',
@@ -439,10 +442,8 @@ minetest.register_node("techpack_stairway:ladder3", {
     sounds = default.node_sound_metal_defaults(),
 })
 
-
-
 minetest.register_node("techpack_stairway:ladder4", {
-	description = "TechPack Ladder 4",
+	description = S("TechPack Ladder 4"),
 	tiles = {
 		'techpack_stairway_ladder.png',
 	},
@@ -450,16 +451,16 @@ minetest.register_node("techpack_stairway:ladder4", {
 	node_box = {
 		type = "fixed",
 		fixed = {
-			--{-17/32, -17/32,  15/32,  17/32,  17/32,  17/32},
-			--{-17/32, -17/32, -17/32, -15/32,  17/32,  17/32},
-			--{-17/32, -17/32, -17/32,  17/32,  17/32, -15/32},
-			{ 15/32, -17/32, -17/32,  17/32,  17/32,  17/32},
+            {-17/32, -17/32,  15/32,  17/32,  17/32,  17/32},
+            --{-17/32, -17/32, -17/32, -15/32,  17/32,  17/32},
+            --{-17/32, -17/32, -17/32,  17/32,  17/32, -15/32},
+            --{ 15/32, -17/32, -17/32,  17/32,  17/32,  17/32},
 		},
 	},
 
 	selection_box = {
 		type = "fixed",
-		fixed = {-8/16, -8/16, -8/16,  8/16, 8/16, 8/16},
+		fixed = {-8/16, -8/16, 6/16,  8/16, 8/16, 8/16},
 	},
 	
 	climbable = true,
@@ -473,7 +474,7 @@ minetest.register_node("techpack_stairway:ladder4", {
 
 
 minetest.register_node("techpack_stairway:lattice", {
-	description = "TechPack Lattice",
+	description = S("TechPack Lattice"),
 	tiles = {
 		'techpack_stairway_lattice.png',
 	},
@@ -504,7 +505,7 @@ minetest.register_node("techpack_stairway:lattice", {
 })
 
 minetest.register_node("techpack_stairway:lattice_slop", {
-	description = "TechPack Lattice Slope",
+	description = S("TechPack Lattice Slope"),
 	tiles = {
 		'techpack_stairway_lattice.png',
 	},
@@ -593,6 +594,15 @@ minetest.register_craft({
 		{"", "", "default:steel_ingot"},
 		{"dye:dark_grey", "default:tin_ingot", "default:coal_lump"},
 		{"", "", "default:steel_ingot"},
+	},
+})
+
+minetest.register_craft({
+	output = "techpack_stairway:ladder4 8",
+	recipe = {
+		{"dye:dark_grey", "default:tin_ingot", "default:coal_lump"},
+		{"", "default:steel_ingot", ""},
+		{"", "default:steel_ingot", ""},
 	},
 })
 
