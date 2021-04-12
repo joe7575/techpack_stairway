@@ -15,7 +15,7 @@
 local S = minetest.get_translator("techpack_stairway")
 
 -- Test MT 5.4 new string mode
-local CLIP = minetest.features.use_texture_alpha_string_modes and "clip" or true
+local CLIP = minetest.features.use_texture_alpha_string_modes and "clip" or false
 
 
 minetest.register_node("techpack_stairway:grating", {
