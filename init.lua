@@ -573,7 +573,7 @@ minetest.register_node("techpack_stairway:lattice_slop", {
 })
 
 minetest.register_craft({
-	output = "techpack_stairway:grating 4",
+	output = "techpack_stairway:grating 6",
 	recipe = {
 		{"", "", ""},
 		{"dye:dark_grey", "", "default:coal_lump"},
@@ -582,7 +582,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "techpack_stairway:handrail1 4",
+	output = "techpack_stairway:handrail1 6",
 	recipe = {
 		{"default:steel_ingot", "default:coal_lump", ""},
 		{"default:tin_ingot", "", ""},
@@ -591,7 +591,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "techpack_stairway:stairway 2",
+	output = "techpack_stairway:stairway 3",
 	recipe = {
 		{"", "", "default:steel_ingot"},
 		{"dye:dark_grey", "default:tin_ingot", "default:coal_lump"},
@@ -600,7 +600,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "techpack_stairway:ladder1 2",
+	output = "techpack_stairway:ladder1 3",
 	recipe = {
 		{"", "default:steel_ingot", ""},
 		{"dye:dark_grey", "default:tin_ingot", "default:coal_lump"},
@@ -609,7 +609,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "techpack_stairway:ladder3 4",
+	output = "techpack_stairway:ladder3 6",
 	recipe = {
 		{"", "", "default:steel_ingot"},
 		{"dye:dark_grey", "default:tin_ingot", "default:coal_lump"},
@@ -618,7 +618,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "techpack_stairway:ladder4 8",
+	output = "techpack_stairway:ladder4 12",
 	recipe = {
 		{"dye:dark_grey", "default:tin_ingot", "default:coal_lump"},
 		{"", "default:steel_ingot", ""},
@@ -627,7 +627,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "techpack_stairway:lattice 2",
+	output = "techpack_stairway:lattice 4",
 	recipe = {
 		{"default:steel_ingot", "", "default:steel_ingot"},
 		{"dye:dark_grey", "default:tin_ingot", "default:coal_lump"},
